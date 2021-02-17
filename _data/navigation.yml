@@ -25,9 +25,9 @@ docs:
       - title: "Docker"
         url: /docker/first/
 
-  - title: Customization
+  - title: BLOG
     children:
-      - title: "BLOG"
+      - title: "MarkDown"
         url: /blog/first
   #    - title: "Navigation"
   #      url: /docs/navigation/
