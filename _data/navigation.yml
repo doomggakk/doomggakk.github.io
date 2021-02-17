@@ -25,10 +25,10 @@ docs:
       - title: "Docker"
         url: /docker/first/
 
-  #- title: Customization
-  #  children:
-  #    - title: "Configuration"
-  #      url: /docs/configuration/
+  - title: Customization
+    children:
+      - title: "BLOG"
+        url: /blog/first
   #    - title: "Navigation"
   #      url: /docs/navigation/
   #    - title: "UI Text"
