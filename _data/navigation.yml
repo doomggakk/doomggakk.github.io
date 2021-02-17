@@ -18,6 +18,12 @@ docs:
         url: /docs/quick-start-guide/
       - title: "Kubernetes"
         url: /docs/structure/
+      - title: "Java Script"
+        url: /docs/structure/
+      - title: "Angular"
+        url: /docs/structure/
+      - title: "Docker"
+        url: /docs/structure/
 
   #- title: Customization
   #  children:
