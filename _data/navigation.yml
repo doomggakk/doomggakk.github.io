@@ -10,3 +10,6 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sidebar:
+title: "Sample Title"
+nav: sidebar-sample
