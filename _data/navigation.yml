@@ -15,15 +15,15 @@ docs:
   - title: STUDY
     children:
       - title: "정보처리기사"
-        url: /docs/Engineer Information Processing/
+        url: /Engineer Information Processing/
       - title: "Kubernetes"
-        url: /docs/kubernetes/
+        url: /kubernetes/
       - title: "Java Script"
-        url: /docs/js/
+        url: /js/
       - title: "Angular"
-        url: /docs/angular/
+        url: /angular/
       - title: "Docker"
-        url: /docs/docker/
+        url: /docker/
 
   #- title: Customization
   #  children:
