@@ -7,8 +7,9 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.initial_content{
- background: #fad4bc
+.initial-content, .search-content {
+    flex: 1 0 auto;
+    background: #fff2ea;
 }
 
 .masthead {
@@ -19,7 +20,7 @@
     -webkit-animation-delay: 0.15s;
     animation-delay: 0.15s;
     z-index: 20;
-    background: #e5c8b3;
+    background: #ffe2ce;
 }
 
 .greedy-nav {
@@ -31,5 +32,4 @@
     -ms-flex-align: center;
     align-items: center;
     min-height: 2em;
-    background: #e5c8b3;
-}
+    background: #ffe2ce
