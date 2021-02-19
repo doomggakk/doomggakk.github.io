@@ -71,3 +71,8 @@ kubectl rollout history deployment/myapp-deployment # rollout 히스토리 출�
 2. Rolling Update : Replica를 하나씩 처리. 한개씩 내리고 올리기를 반복하여 사용자가 접근할 수 없는 문제점을 해소함 
 -> Deployment의 Default Strategy임
 
+<br><br>
+
+## RollBack과 RollOut 구동화면
+1. RollOut
+
