@@ -5,20 +5,22 @@ categories: [Kubernetes]
 author_profile: true
 ---
 
-## Kubernetes Concepts
+- Kubernetes의 구성요소인 Replicaset에 대해 정리한다.
 
-> 3-1. Replication Controllers and ReplicaSets
+---
+
+## Replication Controllers and ReplicaSets
 
 - k8s에서의 controller는 Brain.
 - **Replication Controller**와 **ReplilcaSets**은 같은 기능을 하지만 **ReplicaSets**이 **Replication Controller**를 대체하는 기술로 자리 잡음
 - replica Sets이 필요한 이유
-1. High Availability : 정해놓은 pod 개수대로 반드시 실행되고 있도록 유지해줌.<br>
+    1. High Availability : 정해놓은 pod 개수대로 반드시 실행되고 있도록 유지해줌.<br>
     -pod의 개수를 1개로 설정해놓았다면 1개의 pod이 실행되다가 오류가 났을경우 자동으로 새로운 pod으로 대체<br>
-2. Load Balancing & Scaling : 사용자가 늘어나면 그에 맞춰 pod을 늘려주거나 첫번째 노드의 리소스가 부족하면 다른 node에 pod을 늘려주는 등의 기능을 함
+    2. Load Balancing & Scaling : 사용자가 늘어나면 그에 맞춰 pod을 늘려주거나 첫번째 노드의 리소스가 부족하면 다른 node에 pod을 늘려주는 등의 기능을 함
 
 <br><br>
 
-- ReplicaSet YAML 작성
+### ReplicaSet YAML 작성
 ```yaml
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -48,25 +50,25 @@ spec:
     
     <br><br>
 
-- replicaset 구동화면( alias k='kubectl' 적용 )
-    1. yml 파일 적용<br>
-    ![](/assets/img/kubernetes/3_replicaset_1.png)
+### replicaset 구동화면( alias k='kubectl' 적용 )
+ 1. yml 파일 적용<br>
+![](/assets/img/kubernetes/3_replicaset_1.png)
     <br>
-    2. 1개의 Pod 삭제 후 상태 확인<br>
-    ![](/assets/img/kubernetes/3_replicaset_2.png)<br>
-    해당 Pod은 삭제됐지만 새로운 Pod이 생성되어 3개의 Pod을 유지
+2. 1개의 Pod 삭제 후 상태 확인<br>
+![](/assets/img/kubernetes/3_replicaset_2.png)<br>
+해당 Pod은 삭제됐지만 새로운 Pod이 생성되어 3개의 Pod을 유지
     <br>
-    3. 3개의 Pod이 있는 상태에서 같은 Label인 Pod을 하나 더 생성<br>
-    ![](/assets/img/kubernetes/3_replicaset_3.png)<br>
-     3개의 Pod을 유지하기 위해 새로 생성된 Pod을 자동으로 없앰
+3. 3개의 Pod이 있는 상태에서 같은 Label인 Pod을 하나 더 생성<br>
+![](/assets/img/kubernetes/3_replicaset_3.png)<br>
+3개의 Pod을 유지하기 위해 새로 생성된 Pod을 자동으로 없앰
     <br>
-    4. Replicaset의 Scale 수정<br>
-    ![](/assets/img/kubernetes/3_replicaset_4.png)
+4. Replicaset의 Scale 수정<br>
+![](/assets/img/kubernetes/3_replicaset_4.png)
     
-    <br><br>
+<br><br>
 
-- Scale
-    - **ReplicaSet의 Scale을 수정하는법**
+### Scale
+- **ReplicaSet의 Scale을 수정하는법**
     <br>
     1. yml 파일 수정 후 적용하는 명령어
     ```shell
@@ -82,7 +84,7 @@ spec:
     ```
 <br><br>
 
-- replicas = 3일 때 같은 Label인 Pod 을 추가할 경우
+### replicas = 3일 때 같은 Label인 Pod 을 추가할 경우
 ```yml
 apiVersion: v1
 kind: Pod
