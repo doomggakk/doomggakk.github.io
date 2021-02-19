@@ -7,11 +7,6 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-@media (min-width: 80em)
-#main {
-    max-width: 1580px;
-}
-
 .initial-content, .search-content {
     flex: 1 0 auto;
     background: #fff2ea;
