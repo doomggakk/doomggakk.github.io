@@ -49,3 +49,15 @@ ex) 3개의 Pod IP = 10.244.0.2 , 10.244.0.3 , 10.244.0.4<br>
             - 랜카드 하나하나마다, 스위치, 라우터 등에도  서로 다른 MAC 주소가 존재<br>
             - 네트워크 상에서 통신을 할때 서로를 구분하여 인식하기 위한 일종의 주소<br>
             - 네트워크상에서 통신 할때 TCP/IP를 이용하여 IP주소를 사용하지만 이 IP를 다시 MAC으로 변환하는 과정이 있음 -> ARP<br>
+
+<br>
+
+
+◎ 참고자료
+------------------
+
+- Udemy - Kubernetes for the Absolute Beginners - Hands-on
+- [위키백과 - MAC 주소](https://ko.wikipedia.org/wiki/MAC_%EC%A3%BC%EC%86%8C)
+- [네이버 블로그- Phantom Network - [네트워크] 맥 어드레스란? ( MAC Address ) | 간단하게 확인 방법](https://blog.naver.com/shk50611/221433227927)
+- [쿠버네티스 공식문서 - 클러스터 네트워킹](https://kubernetes.io/ko/docs/concepts/cluster-administration/networking/)
+- [ [이해하기] NAT (Network Address Translation) - 네트워크 주소 변환](https://www.stevenjlee.net/2020/07/11/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-nat-network-address-translation-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%A3%BC%EC%86%8C-%EB%B3%80%ED%99%98/)
