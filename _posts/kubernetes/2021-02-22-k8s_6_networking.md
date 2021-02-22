@@ -13,30 +13,30 @@ author_profile: true
 ## Networking in k8s
 
 ### Single Node
-- node 는 ip를 가짐
-**->** 현재 가상환경(hypervisor)에 minikube는 나의 시스템안에 다른 ip를 가진 노드로써 존재함
-- **k8s**에서는 **Pod**에 IP주소가 할당됨
-**->** Pod간에 링크를 생성할 필요가 없고 컨테이너 포트를 호스트 포트에 매핑할 필요가 거의 없음
-**->** **Docker**에서는 **컨테이너**에 IP주소가 할당됨
-- 쿠버네티스가 생성되면 **Internal Private Network**가 어떤 IP의 초기값을 가지고 생성됨 **ex) 10.244.0.0**
-**->** 내부네트워크에 모든 Pod 들이 연결됨
-**->** 다른 POD은 각각 다른 ip 주소를 가짐
-ex) 3개의 Pod IP = 10.244.0.2 , 10.244.0.3 , 10.244.0.4
-**->** Pod은 서로 이 IP주소를 통해 통신한다.
-**->** 그러나 다른 Pod에 이 IP를 가지고 접근하려한다면 Pod이 재생성될때마다 IP가 변하기 때문에 바람직하지 않다.
+- node 는 ip를 가짐<br>
+**->** 현재 가상환경(hypervisor)에 minikube는 나의 시스템안에 다른 ip를 가진 노드로써 존재함<br>
+- **k8s**에서는 **Pod**에 IP주소가 할당됨<br>
+**->** Pod간에 링크를 생성할 필요가 없고 컨테이너 포트를 호스트 포트에 매핑할 필요가 거의 없음<br>
+**->** **Docker**에서는 **컨테이너**에 IP주소가 할당됨<br>
+- 쿠버네티스가 생성되면 **Internal Private Network**가 어떤 IP의 초기값을 가지고 생성됨 **ex) 10.244.0.0**<br>
+**->** 내부네트워크에 모든 Pod 들이 연결됨<br>
+**->** 다른 POD은 각각 다른 ip 주소를 가짐<br>
+ex) 3개의 Pod IP = 10.244.0.2 , 10.244.0.3 , 10.244.0.4<br>
+**->** Pod은 서로 이 IP주소를 통해 통신한다.<br>
+**->** 그러나 다른 Pod에 이 IP를 가지고 접근하려한다면 Pod이 재생성될때마다 IP가 변하기 때문에 바람직하지 않다.<br>
 
 ### Cluster Networking (Multi Nodes)
 - 다른 Node의 **Internal Private Network**가 **10.244.0.0**이고,
- 각 노드에서 생성한 Pod이 동일한 IP주소를 갖게되는 현상이 발생할 수 있음.
+ 각 노드에서 생성한 Pod이 동일한 IP주소를 갖게되는 현상이 발생할 수 있음.<br>
  -> IP주소 충돌로 문제 발생
 - 모든 컨테이너나 Pod은 다른 Pod이나 컨테이너와 NAT(Network Address Translation)없이 통신가능함
 - 모두 NAT없이 모든 컨테이너와 통신 할 수 있으며 그 반대도 마찬가지임
 
 <br>
 
-**※ NAT(Network Address Translation)**
-            - IP 패킷에 있는 출발지 및 목적지의 IP주소와 TCP/UDP포트숫자등을 바꿔 재기록하면 네트워크 트래픽을 주고받게하는 기술
-            - 쓰는 이유 : 1. IP 주소 절약, 2. 보안
+**※ NAT(Network Address Translation)**<br>
+            - IP 패킷에 있는 출발지 및 목적지의 IP주소와 TCP/UDP포트숫자등을 바꿔 재기록하면 네트워크 트래픽을 주고받게하는 기술<br>
+            - 쓰는 이유 : 1. IP 주소 절약, 2. 보안<br>
             
 ![](/assets/img/kubernetes/5_networking_1.png)<br>출처 : 위키피디아
 
