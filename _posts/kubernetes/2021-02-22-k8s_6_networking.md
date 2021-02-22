@@ -53,7 +53,7 @@ ex) 3개의 Pod IP = 10.244.0.2 , 10.244.0.3 , 10.244.0.4<br>
 <br>
 
 ------------------
-◎ 참고자료
+**◎ 참고자료**
 
 
 - Udemy - Kubernetes for the Absolute Beginners - Hands-on

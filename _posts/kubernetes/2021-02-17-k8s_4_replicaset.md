@@ -100,5 +100,12 @@ spec:
 -> 위와 같이 yml을 작성하여 Pod을 추가
 
 
+<br>
 
+------------------
+**◎ 참고자료**
+
+
+- Udemy - Kubernetes for the Absolute Beginners - Hands-on
+- [쿠버네티스 공식문서 - ReplicaSet](https://kubernetes.io/ko/docs/concepts/workloads/controllers/replicaset/)
 

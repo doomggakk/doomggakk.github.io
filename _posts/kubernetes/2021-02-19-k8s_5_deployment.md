@@ -126,3 +126,12 @@ kubectl  rollout undo deployment [deployment 이름] --record
 ![](/assets/img/kubernetes/4_deployment_rollout_10.png)
 - rollout history에서 1번 rollout이 최근 rollout으로 옮겨진것 확인
 ![](/assets/img/kubernetes/4_deployment_rollout_11.png)
+
+<br>
+
+------------------
+**◎ 참고자료**
+
+
+- Udemy - Kubernetes for the Absolute Beginners - Hands-on
+- [쿠버네티스 공식문서 - Deployment](https://kubernetes.io/ko/docs/concepts/workloads/controllers/deployment/)
