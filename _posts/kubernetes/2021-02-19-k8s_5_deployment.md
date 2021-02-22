@@ -74,5 +74,55 @@ kubectl rollout history deployment/myapp-deployment # rollout 히스토리 출�
 <br><br>
 
 ## RollBack과 RollOut 구동화면
-1. RollOut
+- Rollout과 RollBack을 순서대로 구동시켜보도록 하겠다.
 
+<br>
+
+1. 만들어놓은 YAML 파일로 Deployment 생성(alias k='kubectl') 
+![](/assets/img/kubernetes/4_deployment_rollout_1.png)
+
+<br>
+
+2. Pod 정상적으로 생성, Image = nginx 인 것 확인
+![](/assets/img/kubernetes/4_deployment_rollout_2.png)
+![](/assets/img/kubernetes/4_deployment_rollout_3.png)
+
+<br>
+
+3. 아래 명령어를 통해서 rollout 히스토리 확인
+
+```shell
+kubectl rollout history deployment [deployment 이름]
+```
+
+- deployment를 생성한 것이 1번에 들어있는 것을 확인 할 수 있다.
+![](/assets/img/kubernetes/4_deployment_rollout_4.png)
+
+<br>
+
+4. image 버전 변경
+
+```shell
+kubectl set image deployment [deployment 이름] [변경전이미지]=[변경후이미지] --record
+```
+- --record를 추가하여 rollout history에 기록되도록 설정 
+![](/assets/img/kubernetes/4_deployment_rollout_5.png)
+- image = nginx:1.18로 변경된 것 확인
+![](/assets/img/kubernetes/4_deployment_rollout_7.png)
+- rollout history에서 2번째 rollout이 추가된 것 확인
+![](/assets/img/kubernetes/4_deployment_rollout_8.png)
+
+<br>
+
+5. Rollback 실행
+
+```shell
+kubectl  rollout undo deployment [deployment 이름] --record
+```
+
+- Rollback 명령어 입력
+![](/assets/img/kubernetes/4_deployment_rollout_9.png)
+- Image가 다시 nginx:1.18 -> nginx로 수정된 것 확인
+![](/assets/img/kubernetes/4_deployment_rollout_10.png)
+- rollout history에서 1번 rollout이 최근 rollout으로 옮겨진것 확인
+![](/assets/img/kubernetes/4_deployment_rollout_11.png)
