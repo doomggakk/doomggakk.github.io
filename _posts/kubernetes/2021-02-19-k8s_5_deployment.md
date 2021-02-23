@@ -1,6 +1,6 @@
 ---
 layout: single
-title: [Kubernetes] 4.Deployment
+title: "[Kubernetes] 4.Deployment"
 categories: [Kubernetes]
 author_profile: true
 excerpt: Kubernetes의 구성요소인 Deployment에 대해 정리한다
