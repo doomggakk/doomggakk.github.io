@@ -1,12 +1,9 @@
 ---
 layout: single
-title: 5.Networking in k8s
+title: [Kubernetes] 5.Networking in k8s
 categories: [Kubernetes]
 author_profile: true
----
-
-- Kubernetes에서의 Networking에 대해 정리한다.
-
+excerpt: Kubernetes에서의 Networking에 대해 정리한다.
 ---
 
 

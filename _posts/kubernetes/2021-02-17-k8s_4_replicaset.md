@@ -1,13 +1,12 @@
 ---
 layout: single
-title: 3.ReplicaSet
+title: [Kubernetes] 3.ReplicaSet
 categories: [Kubernetes]
 author_profile: true
+excerpt: Kubernetes의 구성요소인 Replicaset에 대해 정리한다.
 ---
 
-- Kubernetes의 구성요소인 Replicaset에 대해 정리한다.
 
----
 
 ## Replication Controllers and ReplicaSets
 
