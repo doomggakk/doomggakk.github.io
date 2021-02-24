@@ -5,7 +5,7 @@ categories: [Kubernetes]
 author_profile: true
 excerpt: Kubernetes의 구성요소인 Deployment에 대해 정리한다
 toc: true
-toc-sticky: true
+toc_sticky: true
 ---
 
 
