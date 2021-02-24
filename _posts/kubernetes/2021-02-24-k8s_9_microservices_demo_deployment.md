@@ -18,7 +18,7 @@ excerpt: Kubernetes에서 Deploymet를 이용한 MicroService Demo를 정리한�
 ---------------------
 - 5개의 Deployment 생성 (이전에 만들었던 Pod YAML파일 참고)
 
-1. Voting-app-deployment
+1.Voting-app-deployment
 
 ```yml
 apiVersion: apps/v1
@@ -49,7 +49,7 @@ spec:
 ```
 <br>
 
-2. Result-app-deployment
+2.Result-app-deployment
 
 ```yml
 apiVersion: apps/v1
@@ -80,7 +80,7 @@ spec:
 ```
 <br>
 
-3. Redis-deployment
+3.Redis-deployment
 
 ```yml
 apiVersion: apps/v1
@@ -111,7 +111,7 @@ spec:
 ```
 <br>
 
-4. Postgres-deployment
+4.Postgres-deployment
 
 ```yml
 apiVersion: apps/v1
@@ -148,7 +148,7 @@ spec:
 
 <br>
 
-5. Worker-deployment
+5.Worker-deployment
 
 ```yml
 apiVersion: apps/v1
@@ -178,7 +178,7 @@ spec:
 ```
 <br>
 
-6. 실행화면
+6.실행화면
 
 - deployment와 pod이 정상적으로 생성됨
 
