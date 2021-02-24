@@ -24,13 +24,14 @@ excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
 <br>
 
 - 구현순서:
+
 1.  각 Pod을 생성
 2. Service(ClusterIP)를 생성
-    1. redis
-    2. DB
+    - redis
+    - DB
 3. Service(NodePort)를 생성
-    1. Voting App
-    2. Result App
+    - Voting App
+    - Result App
 
 -> **Worker App이 Service가 필요하지 않은이유** : 외부에 노출되거나 다른 App들의 접근이 있어야할 경우에만 Service가 필요하기 때문
 
@@ -123,7 +124,7 @@ excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
               value: 'postgres'
     ```
 
-5. Worker app
+5. Worker-app-pod
     ``` yml
     apiVersion: v1
     kind: Pod
@@ -234,19 +235,30 @@ excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
 <br>
 
 **3. 실행결과 확인**
+
 - NodePort Type으로 생성했던 voting, result Service의 접속 url을 확인
+
 ![service url 확인](/assets/img/kubernetes/7_microservice_4.png)
+
 <br>
+
 - Voting App에 접속
+
 ![Voting App](/assets/img/kubernetes/7_microservice_5.png)
+
 <br>
+
 - Result App에 접속
-![Voting App](/assets/img/kubernetes/7_microservice_6.png)
+
+![Result App](/assets/img/kubernetes/7_microservice_6.png)
+
 <br>
 
 ------------------
+
 - 여기까지 Pod을 생성하여 Voting App을 구성하여 보았다.
 - 다음 게시물에서 이어서 Deployment을 생성하여 Voting App을 구성하여 볼 것 이다.
+
 ------------------
 **◎ 참고자료**
 
