@@ -8,8 +8,6 @@ toc: true
 toc_sticky: true
 ---
 
-{% include toc.html html=content %}
-
 ## MicroService on Kubernetes
 - Voting Application을 예시로 쿠버네티스에서의 microservice를 설명한다.
 - Goal : 
