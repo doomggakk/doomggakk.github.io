@@ -266,7 +266,6 @@ compress_html:
   ignore:
     envs: development
 
-toc: true
 
 # Defaults
 defaults:
