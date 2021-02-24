@@ -4,6 +4,8 @@ title: "[Kubernetes] 7-1.MicroService on k8s"
 categories: [Kubernetes]
 author_profile: true
 excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
+toc: true
+toc-sticky: true
 ---
 
 {% include toc.html html=content %}
