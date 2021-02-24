@@ -12,8 +12,9 @@ excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
 1. 컨테이너 생성
 2. Pod간의 연결
 3. 외부 접속
+<br>
 
-Voting App의 구조 : 
+Voting App의 구조 : <br>
 ![VotingApp의 구조](/assets/img/kubernetes/7_microservice_1.png)
 
 <br>
@@ -39,9 +40,13 @@ Voting App의 구조 :
     3. 실행확인
     4. 5개의 Deployment 생성
     5. 실행확인
+
 <br>
+
 **1. 5개의 Pod 생성**
-    1) Voting-app-pod
+
+1. Voting-app-pod
+
     ``` yml
     apiVersion: v1
     kind: Pod
@@ -57,7 +62,8 @@ Voting App의 구조 :
           ports:
             - containerPort: 80
     ```
-    2) Result-app-pod
+
+2. Result-app-pod
     ``` yml
     apiVersion: v1
     kind: Pod
@@ -74,7 +80,7 @@ Voting App의 구조 :
             - containerPort: 80
     ```
 
-    3) Redis-pod
+3. Redis-pod
     ``` yml
     apiVersion: v1
     kind: Pod
@@ -91,7 +97,7 @@ Voting App의 구조 :
             - containerPort: 6379 # redis 기본 port
     ```
 
-    4) Postgres-pod
+4. Postgres-pod
     ``` yml
     apiVersion: v1
     kind: Pod
@@ -113,7 +119,7 @@ Voting App의 구조 :
               value: 'postgres'
     ```
 
-    5) Worker app
+5. Worker app
     ``` yml
     apiVersion: v1
     kind: Pod
@@ -127,7 +133,8 @@ Voting App의 구조 :
         - name: worker-app
           image: kodekloud/examplevotingapp_worker:v1 # worker app sample image
     ```
-    6) Pod 생성 결과
+
+6. Pod 생성 결과
 
     ![VotingApp의 구조](/assets/img/kubernetes/7_microservice_2.png)
 
@@ -135,7 +142,8 @@ Voting App의 구조 :
     <br>
 
 **2. 4개의 Service 생성**
-    1) Voting-app-service
+
+1. Voting-app-service
 
     ``` yml
     apiVersion: v1
@@ -156,7 +164,7 @@ Voting App의 구조 :
           nodePort: 30004
     ```
 
-    2) Result-app-service
+2. Result-app-service
 
     ``` yml
     apiVersion: v1
@@ -177,7 +185,7 @@ Voting App의 구조 :
           nodePort: 30005
     ```
 
-    3) Redis-service
+3. Redis-service
 
     ``` yml
     apiVersion: v1
@@ -196,7 +204,7 @@ Voting App의 구조 :
           targePort: 6379
     ```
 
-    4) Postgres-service
+4. Postgres-service
 
     ``` yml
     apiVersion: v1
