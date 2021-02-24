@@ -4,6 +4,8 @@ title: "[Kubernetes] 7-2.MicroService demo(Deployment)"
 categories: [Kubernetes]
 author_profile: true
 excerpt: Kubernetes에서 Deploymet를 이용한 MicroService Demo를 정리한다. 
+toc: true
+toc-sticky: true
 ---
 
 ## MicroService Demo using Deployment
