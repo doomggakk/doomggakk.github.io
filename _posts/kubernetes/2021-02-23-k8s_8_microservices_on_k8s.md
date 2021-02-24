@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Kubernetes] 7.MicroService on k8s"
+title: "[Kubernetes] 7-1.MicroService on k8s"
 categories: [Kubernetes]
 author_profile: true
 excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
@@ -14,7 +14,11 @@ excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
 3. 외부 접속
 <br>
 
-Voting App의 구조 : <br>
+### Voting App의 구조
+---------------------
+
+ <br>
+
 ![VotingApp의 구조](/assets/img/kubernetes/7_microservice_1.png)
 
 <br>
@@ -136,7 +140,7 @@ Voting App의 구조 : <br>
 
 6. Pod 생성 결과
 
-    ![VotingApp의 구조](/assets/img/kubernetes/7_microservice_2.png)
+    ![Pod 생성결과](/assets/img/kubernetes/7_microservice_2.png)
 
     <br>
     <br>
@@ -222,4 +226,30 @@ Voting App의 구조 : <br>
         - port: 5432
           targePort: 5432
     ```
+5. Service 생성 결과
+
+    ![Service 생성결과](/assets/img/kubernetes/7_microservice_3.png)
+
 <br>
+<br>
+
+**3. 실행결과 확인**
+- NodePort Type으로 생성했던 voting, result Service의 접속 url을 확인
+![service url 확인](/assets/img/kubernetes/7_microservice_4.png)
+<br>
+- Voting App에 접속
+![Voting App](/assets/img/kubernetes/7_microservice_5.png)
+<br>
+- Result App에 접속
+![Voting App](/assets/img/kubernetes/7_microservice_6.png)
+<br>
+
+------------------
+- 여기까지 Pod을 생성하여 Voting App을 구성하여 보았다.
+- 다음 게시물에서 이어서 Deployment을 생성하여 Voting App을 구성하여 볼 것 이다.
+------------------
+**◎ 참고자료**
+
+- Udemy - Kubernetes for the Absolute Beginners - Hands-on
+- [쿠버네티스 공식문서 - 서비스](https://kubernetes.io/ko/docs/concepts/services-networking/service/)
+- [쿠버네티스 공식문서 - 파드](https://kubernetes.io/ko/docs/concepts/workloads/pods/)
