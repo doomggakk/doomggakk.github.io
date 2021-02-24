@@ -6,6 +6,8 @@ author_profile: true
 excerpt: Kubernetes에서의 MicroService에 대해 정리한다.
 ---
 
+{% include toc.html html=content %}
+
 ## MicroService on Kubernetes
 - Voting Application을 예시로 쿠버네티스에서의 microservice를 설명한다.
 - Goal : 
