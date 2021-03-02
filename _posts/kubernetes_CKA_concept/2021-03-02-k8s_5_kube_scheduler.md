@@ -9,6 +9,7 @@ toc_sticky: true
 ---
 
 ## Kube Scheduler
+- Node에 있는 Pod을 스케줄링하는 역할
 
 
 <br>
