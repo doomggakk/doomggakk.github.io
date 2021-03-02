@@ -32,7 +32,7 @@ toc_sticky: true
 <br>
 
 - ETCD Cluster : 
-    - 컨테이너들에 대한 정보를 보관해두는 곳
+    - 클러스터에 대한 정보를 보관해두는 곳
     - 이러한 정보들은 key-value 형식으로 데이터베이스에 저장됨
     
 
@@ -40,6 +40,8 @@ toc_sticky: true
 
 - Kube Scheduler : 
     - 조건이 맞는 필요한 컨테이너를 Worker Node에 적재시키는 크레인과 비교하여 설명
+    - 노드에 있는 컨테이너나 애플리케이션을 스케쥴링하는 역할
+
 
 <br>
 
@@ -55,3 +57,17 @@ toc_sticky: true
     - 내부 및 외부 요청 처리, 최종사용자, 클러스터의 다른부분, 외부컴포넌트 등이 서로 통신할 수 있도록 HTTP API를 제공
     - REST 호출을 사용하여 API 직접 접근 할 수도 있고 커맨드라인 도구를 통해 수행할 수도 있다.
 
+- kubelet:
+    - Cargo Ship의 선장에 비유
+    - 컨테이너나 노드의 상태를 마스터노드에 전달하는 역할도 함
+    - kube-api의 지시를 듣고 컨테이너를 생성, 삭제함
+    - kube-apiserver는 노드를 관리하기 위해 주기적으로 kubelet으로 부터 상태 보고를 받는다.
+
+- kube-proxy
+    - Worker Node에서 컨테이너간의 통신이 필요함<br>
+    ex) 웹서버 컨테이너와 DB컨테이너간의 통신 필요
+    - kube-proxy를 통해 서비스간의 통신이 가능. 즉 다른 컨테이너간의 통신이 가능함
+    <br>
+    
+![Cluster Architecture 도식](/assets/img/kubernetes/9_cluster_architecture_1.png)
+    
