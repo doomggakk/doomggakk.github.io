@@ -64,7 +64,7 @@ ex)
 <pre>
 <code>
 {% highlight html %} <-- 이곳부터 html 그대로 보여줌
-{% raw }%            <-- 이곳부터 liquid 그대로 보여줌
+{% raw %}            <-- 이곳부터 liquid 그대로 보여줌
 
 <ul class="taxonomy__index__sidebar">
 </ul>
@@ -80,3 +80,10 @@ ex)
 </code>
 </pre>
 ```
+
+<br>
+
+------------------
+**◎ 참고자료**
+
+- [깃 블로그에서 코드블록 만들기 - liquid, html, markdown을 한 번에! - 한헌종의 Git Blog](https://hhj6212.github.io/blog/2020/08/22/Jekyll-highlight-codeblock.html)
