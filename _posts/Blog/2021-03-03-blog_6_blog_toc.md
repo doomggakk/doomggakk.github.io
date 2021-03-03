@@ -13,7 +13,7 @@ toc_sticky: true
 
 ### Toc?
 - Table of Contents를 뜻하며 jekyll 블로그에서 게시글마다 화면 구석에 따라다니면서 목차를 보여주는 유용한 기능이다.
-- 원하는 목차로 바로 이동할 수 있어 매우 편리하다.
+- 원하는 목차로 바로 이동할 수 있어 매우 편리하다.<br>
 ex)
 ![toc 예시](/assets/img/blog/6_blog_toc_1.png)
 
