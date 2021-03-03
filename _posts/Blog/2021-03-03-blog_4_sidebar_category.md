@@ -8,7 +8,7 @@ toc: true
 toc_sticky: true
 ---
 
-## 3.사이드바에 카테고리 추가
+## 사이드바에 카테고리 추가
 
 1._includes/sidebar.html 파일 수정
 <pre>

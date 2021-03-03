@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Blog] 5.블로그에서 코드블락의 코드 그대로 보여주기"
+title: "[Blog] 4.블로그에서 코드블락의 코드 그대로 보여주기"
 categories: [Blog]
 author_profile: true
 excerpt: 블로그에서 코드블락의 코드를 그대로 보여주는 방법에 대하여 정리한다.
@@ -8,7 +8,7 @@ toc: true
 toc_sticky: true
 ---
 
-## 5.블로그에서 코드블락의 코드 그대로 보여주기"
+## 블로그에서 코드블락의 코드 그대로 보여주기
 - 블로그 게시물 작성 중 코드를 보여주어야 할 때가 있다.
 그럴 경우 markdown 문법을 사용하여 물결3개 안에 코드를 적어 코드를 출력하도록 한다.
 - liquid나 html코드, markdown 코드 작성 시 게시물에서 raw code 그대로 출력되지 않는 문제가 발생한다.
