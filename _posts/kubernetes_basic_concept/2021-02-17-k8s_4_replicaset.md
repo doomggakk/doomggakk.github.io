@@ -62,7 +62,23 @@ spec:
 3. 3개의 Pod이 있는 상태에서 같은 Label인 Pod을 하나 더 생성<br>
 ![](/assets/img/kubernetes/3_replicaset_3.png)<br>
 3개의 Pod을 유지하기 위해 새로 생성된 Pod을 자동으로 없앰
-    <br>
+### replicas = 3일 때 같은 Label인 Pod 을 추가하는 경우
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+    name: nginx-2
+    labels:
+        app: myapp
+spec:
+    containers:
+        - name: nginx
+          image: nginx
+```
+-> 위와 같이 yml을 작성하여 Pod을 추가
+
+<br>
+
 4. Replicaset의 Scale 수정<br>
 ![](/assets/img/kubernetes/3_replicaset_4.png)
     
@@ -85,23 +101,8 @@ spec:
     ```
 <br><br>
 
-### replicas = 3일 때 같은 Label인 Pod 을 추가할 경우
-```yml
-apiVersion: v1
-kind: Pod
-metadata:
-    name: nginx-2
-    labels:
-        app: myapp
-spec:
-    containers:
-        - name: nginx
-          image: nginx
-```
--> 위와 같이 yml을 작성하여 Pod을 추가
 
 
-<br>
 
 ------------------
 **◎ 참고자료**
