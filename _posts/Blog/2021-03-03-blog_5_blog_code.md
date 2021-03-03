@@ -54,7 +54,7 @@ ex)
 - pre, code 문구는 html언어
 - highlight - endhighlight는 liquid언어
 
-
+~~~
 <pre>
 <code>
 {% highlight html %} <-- 이곳부터 html 그대로 보여줌
@@ -73,7 +73,7 @@ ex)
 {% endhighlight %}
 </code>
 </pre>
-
+~~~
 
 <br>
 
