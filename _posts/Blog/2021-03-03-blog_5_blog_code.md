@@ -53,8 +53,13 @@ ex)
 - 위의 3가지 방법을 잘 조합하면 된다.
 - pre, code 문구는 html언어
 - highlight - endhighlight는 liquid언어
+ex)
 
-~~~
+![pre-code 사용](/assets/img/blog/5_blog_code_3.png)
+
+<br>
+
+-> 출력화면<br>
 <pre>
 <code>
 {% highlight html %} <-- 이곳부터 html 그대로 보여줌
@@ -73,7 +78,6 @@ ex)
 {% endhighlight %}
 </code>
 </pre>
-~~~
 
 <br>
 
