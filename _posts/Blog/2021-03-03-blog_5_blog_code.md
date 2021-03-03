@@ -22,12 +22,12 @@ toc_sticky: true
 **cf) 렌더링 : html,css,JavaScript등 개발자가 작성한 문서를 브라우저에서 그래픽 형태로 출력하는 과정을 말한다.**
 <br>
 - 2가지 방법이 존재
-    1.{% raw %} - {% endraw %}
-    2.{% highlight %} - {% endhighlight %}
+    1.raw - endraw
+    2.highlight - endhighlight
 
 <br>
 
-- {% raw %} - {% endraw %} 코드를 양끝에 사용 한 뒤 **pre** 태그와 **code** 태그를 붙여주면 코드가 하이라이트 되어 좀 더 보기 쉬워진다.
+- raw - endraw 코드를 양끝에 사용 한 뒤 **pre** 태그와 **code** 태그를 붙여주면 코드가 하이라이트 되어 좀 더 보기 쉬워진다.
 
 <br>
 
@@ -39,7 +39,7 @@ ex)
 ### 2. html
 - html 코드를 그대로 보여주는 방법도 2가지가 있다.
     1.물결 3개쓰고 html : 코드블록선언할 때 html을 적어준다.
-    2.{% highlight 표시할언어 %} - {% endhighlight %}
+    2.highlight 표시할언어 - endhighlight
 
     <br>
 
@@ -58,7 +58,7 @@ ex)
 ### 4. 3개 언어 동시 사용
 - 위의 3가지 방법을 잘 조합하면 된다.
 - pre, code 문구는 html언어
-- {% highlight %} - {% endhighlight %}는 liquid언어
+- highlight - endhighlight는 liquid언어
 
 ``` html
 <pre>
