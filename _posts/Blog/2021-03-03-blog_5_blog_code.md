@@ -52,18 +52,16 @@ ex)
 ### 4. 3개 언어 동시 사용
 - 위의 3가지 방법을 잘 조합하면 된다.
 - pre, code 문구는 html언어
-- highlight - endhighlight는 liquid언어
+- highlight - endhighlight는 liquid언어<br>
 ex)
 
 ![pre-code 사용](/assets/img/blog/5_blog_code_3.png)
 
-<br>
-
--> 출력화면<br>
+-> 출력화면
 <pre>
 <code>
-{% highlight html %} <-- 이곳부터 html 그대로 보여줌
-{% raw %}            <-- 이곳부터 liquid 그대로 보여줌
+{% highlight html %} 
+{% raw %}            
 
 <ul class="taxonomy__index__sidebar">
 </ul>
