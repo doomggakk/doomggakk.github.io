@@ -43,6 +43,7 @@ kubectl get pod --namespace=[namespace 이름]
 -------------------------
 
 - Namespce 생성
+
 ```shell
 kubectl create namespace [namespace 이름]
 ```
@@ -61,6 +62,7 @@ metadata:
 <br>
 
 - Pod 생성 후 다른 네임스페이스에 같은 Pod 생성
+
 ```shell
 kubectl create -f pod-definition.yml
 ```
@@ -90,6 +92,7 @@ metadata:
 -------------------------
 
 - Namespce 삭제
+
 ```shell
 kubectl delete namespace [namespace 이름]
 ```
@@ -100,6 +103,7 @@ kubectl delete namespace [namespace 이름]
 -------------------------
 
 - 기본 Namespace 변경
+
 ```shell
 kubectl config set-context --current --namespace=[namespace 이름]
 
@@ -132,11 +136,13 @@ ex)
 <br>
 
 1. **default 네임스페이스**의 Pod을 **default 네임스페이스**의 db-service에 연결하는 경우 : 
+
 ```shell
 mysql.connect("db-service")
 ```
 
 2. **default 네임스페이스**의 Pod을 **dev 네임스페이스**의 db-service에 연결하는 경우 : 
+
 ```shell
 mysql.connect("db-service.dev.svc.cluster.local")
 ```
@@ -158,10 +164,12 @@ Service      Name    service     domain
 ---------------------
 
 - Namespace에 속한 리소스 조회
+
 ```shell
 kubectl api-resources --namespaced=true
 ```
 - Namespace에 속하지 않는 리소스 조회
+
 ```shell
 kubectl api-resources --namespaced=false
 ```
