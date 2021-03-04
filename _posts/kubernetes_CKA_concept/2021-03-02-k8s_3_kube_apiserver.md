@@ -30,7 +30,11 @@ toc_sticky: true
 <br>
 
 **※ 다른 컴포넌트들은 kube-apiserver를 통해서 ETCD에 상태 업데이트를 시킴**
+
+<br>
+
 **※ ETCD 클러스터와 통신하는 유일한 컴포넌트는 kube-apiserver 이다.**
+
 <br>
 
 ### kube-Apiserver 설치
