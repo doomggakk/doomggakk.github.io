@@ -12,7 +12,7 @@ toc_sticky: true
 
 ----------------------------
 
-<a href='https://doomggakk.github.io/kubernetes/k8s_1_pod/'>[Kubernetes] 1.POD 게시물로 이동하기</a>
+<a href='https://doomggakk.github.io/kubernetes/k8s_1_pod/'>[Kubernetes] 1.POD 게시물로 이동하기 >>></a>
 
 <br>
 
@@ -20,8 +20,8 @@ toc_sticky: true
 
 ----------------------------
 
-<a href='https://doomggakk.github.io/kubernetes/k8s_2_yaml/'>[Kubernetes] 2-1.YAML</a>
-<a href='https://doomggakk.github.io/kubernetes/k8s_3_yaml/'>[Kubernetes] 2-2.YAML In k8s</a>
+<a href='https://doomggakk.github.io/kubernetes/k8s_2_yaml/'>[Kubernetes] 2-1.YAML 게시물로 이동하기 >>></a><br>
+<a href='https://doomggakk.github.io/kubernetes/k8s_3_yaml/'>[Kubernetes] 2-2.YAML In k8s 게시물로 이동하기 >>></a>
 
 <br>
 
@@ -29,7 +29,7 @@ toc_sticky: true
 
 ----------------------------
 
-<a href='https://doomggakk.github.io/kubernetes/k8s_4_replicaset/'>[Kubernetes] 3.ReplicaSet</a>
+<a href='https://doomggakk.github.io/kubernetes/k8s_4_replicaset/'>[Kubernetes] 3.ReplicaSet 게시물로 이동하기 >>></a>
 
 <br>
 
@@ -37,4 +37,4 @@ toc_sticky: true
 
 ----------------------------
 
-<a href='https://doomggakk.github.io/kubernetes/k8s_5_deployment/'>[Kubernetes] 4.Deployment</a>
+<a href='https://doomggakk.github.io/kubernetes/k8s_5_deployment/'>[Kubernetes] 4.Deployment 게시물로 이동하기 >>></a>
