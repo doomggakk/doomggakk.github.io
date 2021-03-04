@@ -34,6 +34,7 @@ toc_sticky: true
 <br>
 
 ### kube-Apiserver 설치
+------------------
 ```shell
 wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-apiserver
 ```

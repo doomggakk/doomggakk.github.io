@@ -20,12 +20,14 @@ toc_sticky: true
 <br>
 
 ### Kube Proxy 역할
+------------------
 1. 새로운 Service를 수시로 검색
 2. Service가 생성 됐을 경우 각 Node가 Service에 도달하기 까지의 적절한 규칙을 만든다.<br>
 -> Node마다 iptable을 생성하여 서비스와 실제 Pod의 IP를 기록해둔다.
 <br>
 
 ### Kube Proxy 설치
+------------------
 
 ```shell
 wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-proxy
@@ -35,6 +37,7 @@ wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux
 <br>
 
 ### Kube Proxy 확인 - kubeadm
+------------------
 
 ```shell
 kubectl get pods -n kube-system

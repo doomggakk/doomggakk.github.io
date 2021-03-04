@@ -23,14 +23,14 @@ toc_sticky: true
 
 <br>
 
-###Kube-Scheduler 설치
-
+### Kube-Scheduler 설치
+------------
 ```shell
 wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-scheduler
 ```
 
-###Kube-Scheduler 옵션 확인
-
+### Kube-Scheduler 옵션 확인
+------------
 ```shell
 cat /etc/kubernetes/manifests/kube-scheduler.yaml
 ```

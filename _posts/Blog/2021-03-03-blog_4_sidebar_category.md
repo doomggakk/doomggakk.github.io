@@ -11,6 +11,7 @@ toc_sticky: true
 ## 사이드바에 카테고리 추가
 
 1._includes/sidebar.html 파일 수정
+    - 아래의 코드를 붙여넣기한다.
 <pre>
 <code>
 {% highlight html %}
@@ -79,11 +80,10 @@ toc_sticky: true
 {% endhighlight %}
 </code>
 </pre>
--> 위의 코드를 붙여넣기한다.
 
 <br>
 
-2.게시물의 머릿말에 카테고리를 추가해준다.
+2.게시물의 머릿말에 카테고리를 추가해준다.<br>
 ex)
 
 ```yaml

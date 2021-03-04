@@ -20,16 +20,19 @@ toc_sticky: true
 <br>
 
 ### 컨트롤러의 역할
+------------------
 1. 시스템의 여러 컴포넌트들의 상태를 지속적으로 모니터링한다.
 2. 자신이 맡은 컴포넌트에 무엇인가 문제가 생기면 조치를 취한다.
 
 <br>
 
 ### More about 컨트롤러
+------------------
 -  컨트롤러 안에는 노드 컨트롤러, 레플리케이션 컨트롤러 이외에도 여러가지 컨트롤러 들이 존재한다. 이 각각의 컨트롤러들은 **kube controller manager라는 단일 프로세스 안에 패키징** 되어있다.
 - kube controller manager를 설치하면 그안에 여러가지 컨트롤러들이 설치되어 내장돼있다.
 
 ### kube-controller-maneger 설치
+------------------
 ```shell
 wget https://storage.googleapis.com/kubernetes-release/release/v1.13.0/bin/linux/amd64/kube-controller-manager
 ```
