@@ -88,6 +88,32 @@ metadata:
 
 <br>
 
+
+### Pod과 관련된 Namespace 명령어
+-------------------------
+
+- Namespace 적용하여 Pod 조회
+
+```shell
+kubectl get pod -n [namespace 이름] 
+```
+
+- Namespace 적용하여 Pod 생성
+
+```shell
+kubectl run [Pod 이름] --image=[image 이름] --namespace=[namespace 이름]
+
+kubectl run [Pod 이름] --image=[image 이름] -n [namespace 이름]
+```
+
+- Namespace 상관없이 모든 Pod 조회
+```shell
+kubectl get pod --all-namespace
+```
+
+
+<br>
+
 ### Namespace 삭제
 -------------------------
 
@@ -176,7 +202,8 @@ kubectl api-resources --namespaced=true
 kubectl api-resources --namespaced=false
 ```
 
-<br><br>
+<br>
+<br>
 
 
 ------------------
