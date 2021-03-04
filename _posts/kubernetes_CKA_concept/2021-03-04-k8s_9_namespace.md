@@ -64,10 +64,13 @@ metadata:
 ```shell
 kubectl create -f pod-definition.yml
 ```
+
 ```shell
 kubectl create -f pod-definition.yml --namespace=dev
 ```
+
 또는
+
 ```yml
 # pod-definition.yml
 
