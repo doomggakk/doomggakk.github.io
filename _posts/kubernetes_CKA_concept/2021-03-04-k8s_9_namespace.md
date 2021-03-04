@@ -64,14 +64,14 @@ metadata:
 - Pod 생성 후 다른 네임스페이스에 같은 Pod 생성
 
 ```shell
-kubectl create -f pod-definition.yml
-```
-
-```shell
 kubectl create -f pod-definition.yml --namespace=dev
 ```
 
 또는
+
+```shell
+kubectl create -f pod-definition.yml
+```
 
 ```yml
 # pod-definition.yml
@@ -80,7 +80,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: myapp-pod
-  namespace: dev
+  namespace: dev # namespace 지정
   labels:
   ...
 ```
@@ -110,6 +110,7 @@ kubectl config set-context --current --namespace=[namespace 이름]
 kubectl config view --minify | grep namespace: # 현재 namespace 확인
 ```
 
+<br>
 
 ### Namespace 목적
 ---------------------
@@ -129,23 +130,24 @@ kubectl config view --minify | grep namespace: # 현재 namespace 확인
 - 같은 Namespace에서의 통신은 매우 간단하다.
 - 다른 Namespcce에서의 통신은 DNS가 필요하다.
 
-<br>
+
 
 ex) 
 
-<br>
 
-1. **default 네임스페이스**의 Pod을 **default 네임스페이스**의 db-service에 연결하는 경우 : 
+
+1.**default 네임스페이스**의 Pod을 **default 네임스페이스**의 db-service에 연결하는 경우 : 
 
 ```shell
 mysql.connect("db-service")
 ```
 
-2. **default 네임스페이스**의 Pod을 **dev 네임스페이스**의 db-service에 연결하는 경우 : 
+2.**default 네임스페이스**의 Pod을 **dev 네임스페이스**의 db-service에 연결하는 경우 : 
 
 ```shell
 mysql.connect("db-service.dev.svc.cluster.local")
 ```
+-> **DNS**를 입력해주어야 한다.
 
 <br>
 
