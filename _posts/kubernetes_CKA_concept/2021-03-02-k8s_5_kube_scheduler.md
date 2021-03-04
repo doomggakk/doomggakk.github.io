@@ -3,7 +3,7 @@ layout: single
 title: "[CKA Concept] 5.Kube Scheduler"
 categories: [Kubernetes]
 author_profile: true
-excerpt: CKA 강의에서의 개념 중 쿠버네티스에서의 Kube Scheduler에 대해 정리한다. 
+excerpt: CKA 강의의 개념 중 쿠버네티스에서의 Kube Scheduler에 대해 정리한다. 
 toc: true
 toc_sticky: true
 ---
