@@ -13,6 +13,8 @@ toc_sticky: true
 - Imperative : 택시를 예로들면 택시를 타고나서 기사에게 상세하게 길안내를 해주는 것(어느블락에서 왼쪽으로, 어느 코너에서 오른쪽으로 꺾어달라 등)
 - Declarative : 우버나 카카오택시 처럼 '목적지는 우리집이다'만 등록하면 택시기사가 알아서 목적지까지 간다.
 
+<br>
+
 ### Code에서의 예시
 -----------------------------
 - Imperative(명령형)
@@ -33,6 +35,8 @@ Port: 8080
 ...
 ```
 
+<br>
+
 ### Kubernetes 오브젝트 관리
 ---------------------------
 1. 명령형 커맨드
@@ -43,7 +47,7 @@ Port: 8080
 
 ### 명령형 커맨드 (Imperative commands)
 --------------------
-<br>ex) Deployment를 생성하여 nginx 컨테이너 인스턴스를 구동시킨다.
+ex) Deployment를 생성하여 nginx 컨테이너 인스턴스를 구동시킨다.
 ```shell
 kubectl create deployment nginx --image nginx
 ```
@@ -62,7 +66,7 @@ kubectl create deployment nginx --image nginx
 
 ### 명령형 오브젝트 구성 (Imperative object configuration)
 --------------------
-<br>ex) 구성파일에 정의된 오브젝트 생성
+ex) 구성파일에 정의된 오브젝트 생성
 
 ```shell
 kubectl create -f nginx.yaml
@@ -105,7 +109,7 @@ kubectl replace -f nginx.yaml
 
 ### 선언형 오브젝트 구성 (Declarative object configuration)
 --------------------
-<br>ex) configs 디렉터리 내 모든 오브젝트 구성 파일을 처리하고 활성 오브젝트를 생성 또는 패치한다. 먼저 어떠한 변경이 이루어지게 될지 알아보기 위해 diff 하고 나서 적용할 수 있다.
+ex) configs 디렉터리 내 모든 오브젝트 구성 파일을 처리하고 활성 오브젝트를 생성 또는 패치한다. 먼저 어떠한 변경이 이루어지게 될지 알아보기 위해 diff 하고 나서 적용할 수 있다.
 ```shell
 kubectl diff -f configs/
 kubectl apply -f configs/
@@ -129,11 +133,11 @@ kubectl apply -R -f configs/
 <br><br>
 
 
-### 시험에서의 Tip
+### 시험 Tip
 --------------------
 - 명령어는 주로 **명령형 커맨드 방식**으로 하는것이 시간절약을 할 수 있다.
 
-<br>ex)<br>
+ex)<br>
 
 ```shell
 #### Create
@@ -150,3 +154,20 @@ kubectl scale deployment nginx --replicas=5
 
 kubectl set image deployment nginx nginx-nginx:1.18
 ```
+
+<br>
+
+### 참고할만한 추가자료
+--------------------
+- [명령형 커맨드를 이용한 쿠버네티스 오브젝트 관리하기 >>](https://kubernetes.io/ko/docs/tasks/manage-kubernetes-objects/imperative-command/)
+- [오브젝트 구성을 이용한 쿠버네티스 오브젝트 관리하기(명령형) >>](https://kubernetes.io/ko/docs/tasks/manage-kubernetes-objects/imperative-config/)
+- [오브젝트 구성을 이용한 쿠버네티스 오브젝트 관리하기(선언형) >>](https://kubernetes.io/ko/docs/tasks/manage-kubernetes-objects/declarative-config/)
+
+
+<br><br>
+
+
+------------------
+**◎ 참고자료**
+- Udemy - Certified Kubernetes Administrator (CKA) with Practice Tests
+- [쿠버네티스 공식문서 - 쿠버네티스 오브젝트 관리](https://kubernetes.io/ko/docs/concepts/overview/working-with-objects/object-management/)
