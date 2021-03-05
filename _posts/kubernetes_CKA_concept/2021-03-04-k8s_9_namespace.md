@@ -108,7 +108,7 @@ kubectl run [Pod 이름] --image=[image 이름] -n [namespace 이름]
 
 - Namespace 상관없이 모든 Pod 조회
 ```shell
-kubectl get pod --all-namespace
+kubectl get pod --all-namespaces
 ```
 
 
