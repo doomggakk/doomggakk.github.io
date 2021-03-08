@@ -87,7 +87,7 @@ ex) kubectl get all -l 'env in (production),tier in (frontend).....'
 ex) kubectl get all -l 'env in (production, qa).....'
 ```
 
--> Label값에 포함되는 여러가지 값을 넣어주어 OR(||)을 구현한다.
+-> Label값에 포함되는 여러가지 값을 넣어주어 OR을 구현한다.
 
 - Label이 불일치하는 오브젝트 조회 (NOT)
 
@@ -95,7 +95,7 @@ ex) kubectl get all -l 'env in (production, qa).....'
 ex) kubectl get all -l 'env,env notin (frontend).....'
 ```
 
--> Label notin 명령어를 사용한다.
+-> Label에 notin 명령어를 사용한다.
 
 
 <br><br>
