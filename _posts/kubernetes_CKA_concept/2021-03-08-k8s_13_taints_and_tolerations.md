@@ -40,6 +40,7 @@ kubectl taint nodes node1 key1=value1:NoSchedule-
 ### Toleration 사용 명령어
 ----------------------
 - Pod **spec**에 Toleration 추가
+
 ```yaml
 ...
 tolerations:
@@ -48,7 +49,8 @@ tolerations:
     value: "value1"
     effect: "NoSchedule"
 
---------------------------------- 또는
+또는
+
 ...
 tolerations:
   - key: "key1"
