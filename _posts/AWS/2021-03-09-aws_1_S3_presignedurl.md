@@ -64,7 +64,7 @@ toc_sticky: true
 
 **해당코드**
 
-```Java
+```java
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.HttpMethod;
@@ -117,8 +117,8 @@ public class GeneratePresignedURL {
         }
     }
 }
-
 ```
+
     - ① : application.yml에 aws 정보를 입력하였다면 그중 bucket name을 value로 사용하면된다.
     - ② : API호출시 던져주었던 keyname을 사용한다.
     - ③ : URL 만료시간을 입력한다. (나는 5초로 주었다.)
