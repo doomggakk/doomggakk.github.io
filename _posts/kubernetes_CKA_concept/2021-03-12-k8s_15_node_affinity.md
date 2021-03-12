@@ -44,8 +44,8 @@ spec:
 - Type of Affinity : <br>
 1.```requiredDuringSchedulingIgnoredDuringExecution``` : Pod가 Node에 스케줄되도록 **반드시** 규칙을 만족해야 하는 것(Node Selector와 같지만 좀 더 표현적인 구문 사용)
     - ex) 인텔 CPU가 있는 Node에만 파드 실행
-2.```preferredDuringSchedulingIgnoredDuringExecution``` : 스케줄러가 시도하려고는 하지만 조건에 맞지 않으면 다른 곳에 스케줄링 한다.<br>
 
+2.```preferredDuringSchedulingIgnoredDuringExecution``` : 스케줄러가 시도하려고는 하지만 조건에 맞지 않으면 다른 곳에 스케줄링 한다.
     - ex) 장애 조치영역 XYZ에 Pod를 실행하려하지만 불가능하다면 다른곳에서 일부를 실행하도록 허용
 
 - nodeSelector와 nodeAffinity를 모두 지정한다면 Pod가 후보 Node에 스케줄되기 위해서는 **둘 다 반드시 만족**해야한다.
