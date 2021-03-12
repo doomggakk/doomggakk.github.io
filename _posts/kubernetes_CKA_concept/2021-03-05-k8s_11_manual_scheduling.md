@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CKA Concept] 11. Manual Scheduling"
-categories: [Kubernetes - CKA Concept]
+categories: [Kubernetes]
 author_profile: true
 excerpt: CKA 강의 개념 중 쿠버네티스에서의 Manual Scheduling에 대해 정리한다. 
 toc: true
