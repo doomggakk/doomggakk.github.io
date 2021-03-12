@@ -9,7 +9,7 @@ toc_sticky: true
 ---
 
 ## Node Affinity
-- Node 유연한 제약조건을 할당하는 기능 (Affinity=유연)
+- Pod을 Node에 스케줄링할 때 유연한 제약조건에따라 생성되도록 하는 기능 (Affinity=유연)
 
 <br>
 
@@ -42,11 +42,11 @@ spec:
 - 위의 Affinity는 size = Large or Medium의 조건으로 적용된다.
 - operator : ```In```, ```NotIn```, ```Exists```, ```DoesNotExist```, ```Gt```, ```Lt```
 - Type of Affinity : <br>
-1. ```requiredDuringSchedulingIgnoredDuringExecution``` : Pod가 Node에 스케줄되도록 **반드시** 규칙을 만족해야 하는 것(Node Selector와 같지만 좀 더 표현적인 구문 사용)<br>
+1.```requiredDuringSchedulingIgnoredDuringExecution``` : Pod가 Node에 스케줄되도록 **반드시** 규칙을 만족해야 하는 것(Node Selector와 같지만 좀 더 표현적인 구문 사용)<br>
 
     - ex) 인텔 CPU가 있는 Node에만 파드 실행
 
-2. ```preferredDuringSchedulingIgnoredDuringExecution``` : 스케줄러가 시도하려고는 하지만 조건에 맞지 않으면 다른 곳에 스케줄링 한다.<br>
+2.```preferredDuringSchedulingIgnoredDuringExecution``` : 스케줄러가 시도하려고는 하지만 조건에 맞지 않으면 다른 곳에 스케줄링 한다.<br>
 
     - ex) 장애 조치영역 XYZ에 Pod를 실행하려하지만 불가능하다면 다른곳에서 일부를 실행하도록 허용
 
@@ -58,8 +58,8 @@ spec:
 
 
 
-
-```requiredDuringSchedulingRequiredDuringExecution``` :
+cf) 추가적인 Type
+```requiredDuringSchedulingRequiredDuringExecution``` : 스케줄링될 때 반드시 조건에 만족해야하며, 중간에 Label이 변경되면 Pod도 제거된다.
 
 <br>
 <br>
