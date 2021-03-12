@@ -36,8 +36,6 @@ spec:
     size : Large
 ```
 
-<br>
-
 - Pod을 정의하는 yaml 파일에서 spec에 기입한다.
 - nodeSelector에서 정의한 node의 label은 어떻게 처리되는가?
 
@@ -60,7 +58,7 @@ ex) kubectl label nodes node01 size=Large
 
 - Node selector은 앞서 말했듯이 간단하고 쉬운 방법이다.
 - 따라서 NOT이나 OR과 같은 세부조건을 적용할 수 없다.
-- 이런 조건을 적용하기 위해서는 그다음에 정리할 **Node Affinity**를 이용해야한다.
+- 이런 조건을 적용하기 위해서는 그 다음에 정리할 **Node Affinity**를 이용해야한다.
 
 
 
@@ -76,6 +74,6 @@ ex) kubectl label nodes node01 size=Large
 **◎ 참고자료**
 - Udemy - Certified Kubernetes Administrator (CKA) with Practice Tests
 
-- [쿠버네티스 공식문서 - 노드에 파드 할당하기)](https://kubernetes.io/ko/docs/concepts/scheduling-eviction/assign-pod-node/)
+- [쿠버네티스 공식문서 - 노드에 파드 할당하기](https://kubernetes.io/ko/docs/concepts/scheduling-eviction/assign-pod-node/)
 
 
