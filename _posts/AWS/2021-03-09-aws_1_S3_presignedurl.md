@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AWS] 2.S3 대용량파일 클라이언트단에서 다운로드하기(JAVA) "
+title: "[AWS] 2. S3 대용량파일 클라이언트단에서 다운로드하기(JAVA) "
 categories: [AWS]
 author_profile: true
 excerpt: AWS 개념 중 클라이언트에서 직접 S3 대용량파일을 다운로드하는 방식에 대해 정리한다. 

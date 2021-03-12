@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[CKA Concept] 1.Cluster Architecture"
+title: "[CKA Concept] 1. Cluster Architecture"
 categories: [Kubernetes]
 author_profile: true
 excerpt: CKA 강의의 개념 중 Cluster Architecture에 대해 정리한다. 

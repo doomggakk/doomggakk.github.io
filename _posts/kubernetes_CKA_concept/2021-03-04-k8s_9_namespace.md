@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[CKA Concept] 9.Namespace"
+title: "[CKA Concept] 9. Namespace"
 categories: [Kubernetes]
 author_profile: true
 excerpt: CKA 강의 개념 중 쿠버네티스에서의 Namespace에 대해 정리한다. 

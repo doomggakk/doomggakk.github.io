@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Blog] 5.블로그에 Toc 추가"
+title: "[Blog] 5. 블로그에 Toc 추가"
 categories: [Blog]
 author_profile: true
 excerpt: 블로그에 Toc을 추가하는 방법에 대해 정리한다.

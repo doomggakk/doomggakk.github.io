@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[CKA Concept] 8.Pod, YAML, ReplicaSet, Deployment"
+title: "[CKA Concept] 8. Pod, YAML, ReplicaSet, Deployment"
 categories: [Kubernetes]
 author_profile: true
 excerpt: CKA 강의의 개념 중 쿠버네티스에서의 Pod, YAML, ReplicaSet, Deployment에 대해 정리한다. 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Blog] 4.블로그에서 코드블락의 코드 그대로 보여주기"
+title: "[Blog] 4. 블로그에서 코드블락의 코드 그대로 보여주기"
 categories: [Blog]
 author_profile: true
 excerpt: 블로그에서 코드블락의 코드를 그대로 보여주는 방법에 대하여 정리한다.

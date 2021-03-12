@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Kubernetes] 7-1.MicroService on k8s"
+title: "[Kubernetes] 7-1. MicroService on k8s"
 categories: [Kubernetes]
 author_profile: true
 excerpt: Kubernetes에서의 MicroService에 대해 정리한다.

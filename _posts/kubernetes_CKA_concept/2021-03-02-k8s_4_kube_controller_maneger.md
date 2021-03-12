@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[CKA Concept] 4.Kube Controller Manager"
+title: "[CKA Concept] 4. Kube Controller Manager"
 categories: [Kubernetes]
 author_profile: true
 excerpt: CKA 강의의 개념 중 쿠버네티스에서의 Kube Controller Manager에 대해 정리한다. 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Blog] 3.사이드바에 카테고리 추가"
+title: "[Blog] 3. 사이드바에 카테고리 추가"
 categories: [Blog]
 author_profile: true
 excerpt: 사이드바에 카테고리를 추가하는 기능에 대하여 정리한다.
