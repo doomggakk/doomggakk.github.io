@@ -42,6 +42,7 @@ spec:
 - 위의 Affinity는 size = Large or Medium의 조건으로 적용된다.
 - operator : ```In```, ```NotIn```, ```Exists```, ```DoesNotExist```, ```Gt```, ```Lt```
 - Type of Affinity :
+
 1.```requiredDuringSchedulingIgnoredDuringExecution``` : Pod가 Node에 스케줄되도록 **반드시** 규칙을 만족해야 하는 것(Node Selector와 같지만 좀 더 표현적인 구문 사용)
     - ex) 인텔 CPU가 있는 Node에만 파드 실행
 
