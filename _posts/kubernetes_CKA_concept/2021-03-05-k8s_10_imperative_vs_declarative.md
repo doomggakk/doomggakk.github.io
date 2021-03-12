@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CKA Concept] 10. Imperative VS Declarative"
-categories: [Kubernetes - CKA Concept]
+categories: [Kubernetes-CKA Concept]
 author_profile: true
 excerpt: CKA 강의 개념 중 쿠버네티스에서의 Imperative와 Declarative에 대해 정리한다. 
 toc: true
