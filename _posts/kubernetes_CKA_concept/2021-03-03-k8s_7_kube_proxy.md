@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[CKA Concept] 7. Kube Proxy"
-categories: [Kubernetes]
+categories: [Kubernetes - CKA Concept]
 author_profile: true
 excerpt: CKA 강의의 개념 중 쿠버네티스에서의 Kube Proxy에 대해 정리한다. 
 toc: true

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Kubernetes] 5. Networking in k8s"
-categories: [Kubernetes]
+categories: [Kubernetes - Basic]
 author_profile: true
 excerpt: Kubernetes에서의 Networking에 대해 정리한다.
 toc: true
